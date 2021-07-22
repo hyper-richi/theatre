@@ -1,5 +1,5 @@
 {
-  "name": "greattheatre",
+  "name": "theatre",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -29,5 +29,16 @@
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "panini": "^1.7.1"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamalov-eldar/theatre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kamalov-eldar/theatre/issues"
+  },
+  "homepage": "https://github.com/kamalov-eldar/theatre#readme"
 }

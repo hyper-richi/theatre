@@ -33,13 +33,13 @@ function html() {
           collapseWhitespace: true,
         })
       )
-      .pipe(dest("dist"))
-  ); // создаст dist экспорт туда готов html
+      .pipe(dest("docs"))
+  ); // создаст docs экспорт туда готов html
 }
 
 /* function serve() {
   browserSync.init({
-    browserSync: { baseDir: "./dist" },
+    browserSync: { baseDir: "./docs" },
     //port: 9000,
     //host: 'localhost',
     notify: false,
@@ -53,7 +53,7 @@ function scripts() {
       // destPath + 'js/*.js', {dot: true, ignore: '/**/*min.js'}
       .pipe(concat("min.js"))
       .pipe(uglify()) // минификация
-      .pipe(dest("dist/js/"))
+      .pipe(dest("docs/js/"))
   );
 }
 
@@ -66,7 +66,7 @@ function styles() {
       .pipe(cleancss({ level: { 1: { specialComments: 0 } } /*, format:"beautify" */ }))
       // level: {1: {specialComments: 0} в 1 строку удалит коментарии
       .pipe(autoprefixer("last 10 versions", "safari 5", "ie6", "ie7", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
-      .pipe(dest("dist/css/"))
+      .pipe(dest("docs/css/"))
   );
 }
 
@@ -77,17 +77,17 @@ function normalize() {
       .pipe(cleancss({ level: { 1: { specialComments: 0 } } /*, format:"beautify" */ }))
       // level: {1: {specialComments: 0} в 1 строку и удалит коментарии
       .pipe(csso())
-      .pipe(dest("dist/css/"))
+      .pipe(dest("docs/css/"))
   );
 }
 
 function images() {
   return (
     src("img/*")
-      .pipe(newer("dist/img/"))
+      .pipe(newer("docs/img/"))
       .pipe(imagemin())
       //.pipe(webp())
-      .pipe(dest("dist/img/"))
+      .pipe(dest("docs/img/"))
   );
 }
 
