@@ -247,7 +247,7 @@ figure {
 .intro__background {
   //min-width: 1920px;
   height: 1045px;
-  background: url("intro-bg.png");
+  background: url(/theatre/img/intro-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -989,7 +989,7 @@ figure {
     display: block;
     width: 350px;
     height: 290px;
-    background: url("theatre/img/theater-img.png");
+    background: url(/theater/img/theater-img.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
