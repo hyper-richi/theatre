@@ -3,8 +3,8 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("/theatre/libs/fonts/open-sans-v18-cyrillic-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/theatre/libs/fonts/open-sans-v18-cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/open-sans-v18-cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("./fonts/open-sans-v18-cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-condensed-300 - latin_cyrillic */
@@ -12,16 +12,16 @@
   font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: 300;
-  src: local(""), url("/theatre/libs/fonts/open-sans-condensed-v15-latin_cyrillic-300.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/theatre/libs/fonts/open-sans-condensed-v15-latin_cyrillic-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/open-sans-condensed-v15-latin_cyrillic-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("./fonts/open-sans-condensed-v15-latin_cyrillic-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* open-sans-condensed-700 - latin_cyrillic */
 @font-face {
   font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("/theatre/libs/fonts/open-sans-condensed-v15-latin_cyrillic-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/theatre/libs/fonts/open-sans-condensed-v15-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("./fonts/open-sans-condensed-v15-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("./fonts/open-sans-condensed-v15-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 //------viewports------------
@@ -989,7 +989,7 @@ figure {
     display: block;
     width: 350px;
     height: 290px;
-    background: url(/theater/img/theater-img.png);
+    background: url(./img/theater-img.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
