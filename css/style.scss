@@ -180,7 +180,7 @@ figure {
   left: 0;
   z-index: 2;
   width: 150px;
-  height: 100%;
+  height: 1045px;
   background-color: rgba(51, 51, 51, 0.75);
 }
 
@@ -248,6 +248,7 @@ figure {
   //min-width: 1920px;
   height: 1045px;
   background: url(/theatre/img/intro-bg.png);
+ /*  background: url(/img/intro-bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -958,13 +959,12 @@ figure {
     display: none;
   }
 
-  .intro__title {
-    font-size: 2.5vw;
+  .intro__background {
+    height: 1056px;
   }
 
-  .intro__slider {
-    display: flex;
-    margin-left: 125px;
+  .fixed-panel {
+    height: 1056px;
   }
 
   .intro__container {
@@ -972,6 +972,15 @@ figure {
     width: 540px;
     margin: 0;
     //margin-left: -40px;
+  }
+
+  .intro__slider {
+    display: flex;
+    margin-left: 125px;
+  }
+
+  .intro__title {
+    font-size: 2.5vw;
   }
 
   .about {
@@ -1435,6 +1444,9 @@ figure {
     position: fixed;
   }
 
+  .header__wrapper {
+    height: 600px;
+  }
   /* .wrapper {
     //margin: 0 40px;
     width: 510px;
@@ -1498,17 +1510,7 @@ figure {
     height: 550px;
 
     width: 100%;
-    //height: 550px;
-    /* figure {
-      height: 100%;
-    } */
   }
-  /*  .rating {
-    .wrapper {
-      padding: 0;
-      //width: 510px;
-    }
-  } */
   .rating__wrapp {
     flex-direction: column;
     max-width: 510px;
