@@ -2,7 +2,7 @@
 
 Адаптивная вёрстка: мобильная, планшетная и десктопная
 
-Слайдер картинок на JQuery
+Слайдер картинок на jQuery
 
 ![image](https://github.com/kamalov-eldar/theatre/blob/master/img/DemoTheatre.gif)
 
