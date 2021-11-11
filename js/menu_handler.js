@@ -10,7 +10,6 @@
   });
 
   menuClose.addEventListener("click", () => {
-        console.log(menu);
 
     menu.classList.remove("header__wrapper_active");
     menuOpen.style.display = "block";
