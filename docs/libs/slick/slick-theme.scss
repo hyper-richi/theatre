@@ -109,9 +109,9 @@ $slick-opacity-not-active: 0.25 !default;
     right: -25px;
   }
   &:before {
-    content: url("/theatre/svg/ArrowPrev.svg");
+    content: url("/theatre/img/svg/ArrowPrev.svg");
     [dir="rtl"] & {
-      content: url("/theatre/svg/ArrowNext.svg");
+      content: url("/theatre/img/svg/ArrowNext.svg");
     }
   }
 }
@@ -123,9 +123,9 @@ $slick-opacity-not-active: 0.25 !default;
     right: auto;
   }
   &:before {
-    content: url("/theatre/svg/ArrowNext.svg");
+    content: url("/theatre/img/svg/ArrowNext.svg");
     [dir="rtl"] & {
-      content: url("/theatre/svg/ArrowPrev.svg");
+      content: url("/theatre/img/svg/ArrowPrev.svg");
     }
   }
 }
