@@ -3,13 +3,13 @@ const { src, dest, parallel, watch } = require("gulp") /* Require говорит
   browserSync = require("browser-sync").create(),
   pug = require("gulp-pug"),
   sass = require("gulp-sass")(require("sass")),
-  csso = require('gulp-csso'),
+  csso = require("gulp-csso"),
   concat = require("gulp-concat"), // обьединение файлов в один
   uglify = require("gulp-uglify-es").default, // Minify JavaScript
   autoprefixer = require("gulp-autoprefixer"),
   cleancss = require("gulp-clean-css"),
-  plumber = require("gulp-plumber"), /* Gulp - plumber поможет нам без прекращения gulp watch продолжить работать
-  и выдаст нам все наши критические ошибки. */
+  plumber = require("gulp-plumber") /* Gulp - plumber поможет нам без прекращения gulp watch продолжить работать
+  и выдаст нам все наши критические ошибки. */,
   imagemin = require("gulp-imagemin"),
   htmlmin = require("gulp-htmlmin"),
   panini = require("panini"), //сборки файлов HTML из общих элементов
@@ -34,7 +34,7 @@ function html() {
         })
       )
       .pipe(dest("docs"))
-  ); // создаст docs экспорт туда готов html
+  ); // создаст docs, экс-ет туда готов html
 }
 
 /* function serve() {
@@ -65,7 +65,13 @@ function styles() {
       .pipe(concat("style.min.css"))
       .pipe(cleancss({ level: { 1: { specialComments: 0 } } /*, format:"beautify" */ }))
       // level: {1: {specialComments: 0} в 1 строку удалит коментарии
-      .pipe(autoprefixer("last 10 versions", "safari 5", "ie6", "ie7", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"))
+      .pipe(
+        autoprefixer({
+          overrideBrowserslist: ["last 8 versions"],
+          browsers: ["Android >= 4", "Chrome >= 20", "Firefox >= 24", "Explorer >= 11", "iOS >= 6", "Opera >= 12", "Safari >= 6"],
+          grid: true,
+        })
+      )
       .pipe(dest("docs/css/"))
   );
 }
